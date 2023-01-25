@@ -10,7 +10,7 @@ describe('testing actions of redux', () => {
     };
     expect(actions.addToCart(payload)).toEqual(expected);
   });
-  test('testing remove from card action', () => {
+  test('testing remove from cart action', () => {
     const payload = ProductMock;
     const expected = {
       type: 'REMOVE_FROM_CART',

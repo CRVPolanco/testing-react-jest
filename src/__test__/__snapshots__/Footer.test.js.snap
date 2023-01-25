@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer snapshot check component ui if does not change  1`] = `
+<div
+  className="Footer class"
+>
+  <p
+    className="Footer-title"
+  >
+    Kajlo Store
+  </p>
+  <p
+    className="Footer-copy"
+  >
+    Todos los Izquierdos Reservados
+  </p>
+</div>
+`;

@@ -1,0 +1,25 @@
+name: Tests CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+    - name: nodejs
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+        cache: 'npm'
+    - name: install dependencies
+      shell: bash
+      run: npm ci
+    - name: run unit test
+      shell: bash
+      run: npm run test
